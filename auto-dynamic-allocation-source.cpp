@@ -1,9 +1,16 @@
 #include <iostream>
 #include <cstdlib>
+#include <Windows.h>
 
 using namespace std;
 
+HANDLE heap = GetProcessHeap();
+SIZE_T maxSize = -1;
+SIZE_T prevSize;
+BOOL success = HeapSetInformation(heap, HeapCompatibilityInformation, &maxSize, sizeof(maxSize));
+
 int main(){
+	
 	int unit = sizeof(int) * 25;
 	unsigned long long size = 1ULL * 1024 * 1024 * unit;
 	

@@ -1,7 +1,13 @@
 #include <iostream>
 #include <cstdlib>
+#include <Windows.h>
 
 using namespace std;
+
+HANDLE heap = GetProcessHeap();
+SIZE_T maxSize = -1;
+SIZE_T prevSize;
+BOOL success = HeapSetInformation(heap, HeapCompatibilityInformation, &maxSize, sizeof(maxSize));
 
 int main(){
 	
