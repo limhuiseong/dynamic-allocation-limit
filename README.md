@@ -12,7 +12,7 @@
 (dynamic-allocation.exe 실행)
 
 ### auto method
-1. <a href = "/">DOWNLOAD auto-dynamic-allocation.exe<br>
+1. <a href = "https://github.com/limhuiseong/dynamic-allocation-limit/blob/main/auto-dynamic-allocation.exe?raw=true">DOWNLOAD auto-dynamic-allocation.exe<br>
 (auto-dynamic-allocation.exe 다운)</a>
 
 2. EXECUTE auto-dynamic-allocation.exe<br>
